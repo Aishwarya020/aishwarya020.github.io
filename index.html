@@ -79,10 +79,7 @@ FACEBOOK: https://www.facebook.com/themefisher
         </li>
         <li class="nav-item">
           <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+       </li>
       </ul>
     </div>
   </nav>
@@ -469,6 +466,8 @@ FACEBOOK: https://www.facebook.com/themefisher
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
           <form action="#" class="row">
+           <form class="gform pure-form pure-form-stacked" method="POST" data-email="iamaish2012@gmail.com"
+                 action="https://script.google.com/macros/s/AKfycbwVhzFN5SkvBYHb8Zqa6_Mt8sl8BUVzeCj3sO8Ak6BkAUo_iLcHlxGjQJxJ1B6xX48K/exec">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
             </div>
@@ -479,10 +478,20 @@ FACEBOOK: https://www.facebook.com/themefisher
               <textarea name="message" id="message" class="form-control px-0 mb-4"
                 placeholder="Type Message Here" required></textarea>
             </div>
+            <fieldset class="pure-group honeypot-field">
+             <label for="honeypot">  To help avoid spam, utilize the below text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+             <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
             <div class="col-lg-6 col-10 mx-auto">
               <button class="btn btn-primary w-100">send</button>
             </div>
-          </form>
+            <div class="thankyou_message" style="display:none;">
+             <h2><em>Thanks</em> for contacting!
+              I will get back to you soon!</h2>
+            </div>
+           </form>
+           </form>
+           <script data-cfasync="false" src="js/form-submission-handler.js"></script>
         </div>
       </div>
     </div>
